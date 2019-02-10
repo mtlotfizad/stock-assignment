@@ -2,37 +2,26 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
-	<groupId>com.lotfizad</groupId>
-
-	<artifactId>stock-assignment</artifactId>
-	<version>1.0.0</version>
-	<packaging>jar</packaging>
-
-	<name>stick-assignment</name>
-	<description>This is a written cone of my assignment</description>
-
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.0.RELEASE</version>
-		<relativePath />
+		<version>2.1.2.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-
+	<groupId>com.lotfizad</groupId>
+	<artifactId>stock-assignment</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>stock-assignment</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-        <docker-maven-plugin.version>1.4.0</docker-maven-plugin.version>
+		<docker-maven-plugin.version>1.4.0</docker-maven-plugin.version>
 		<fasterxml.version>2.9.0</fasterxml.version>
 	</properties>
 
 	<dependencies>
-
-
-		<!--########################################### SPRING ######################################################-->
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -47,17 +36,14 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
-
-
-		<!--########################################## UTILS ########################################################-->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
 
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
@@ -65,8 +51,11 @@
 			<version>${fasterxml.version}</version>
 		</dependency>
 
-		<!--########################################### END #########################################################-->
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -74,15 +63,13 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<executable>true</executable>
-				</configuration>
 			</plugin>
-            <plugin>
-                <groupId>com.spotify</groupId>
-                <artifactId>dockerfile-maven-extension</artifactId>
-                <version>${docker-maven-plugin.version}</version>
-            </plugin>
+			<plugin>
+				<groupId>com.spotify</groupId>
+				<artifactId>dockerfile-maven-extension</artifactId>
+				<version>${docker-maven-plugin.version}</version>
+			</plugin>
 		</plugins>
 	</build>
+
 </project>
