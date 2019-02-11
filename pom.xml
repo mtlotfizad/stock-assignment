@@ -62,6 +62,13 @@
 			<artifactId>dockerfile-maven-extension</artifactId>
 			<version>${docker-maven-plugin.version}</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.liquibase</groupId>
+			<artifactId>liquibase-core</artifactId>
+			<version>3.4.1</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
