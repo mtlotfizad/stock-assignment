@@ -1,4 +1,4 @@
-package com.lotfizad.stockassignment.domain;
+package com.lotfizad.stockassignment.repository.domain;
 
 import org.hibernate.annotations.UpdateTimestamp;
 

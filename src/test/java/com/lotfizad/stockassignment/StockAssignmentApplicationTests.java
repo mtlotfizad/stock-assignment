@@ -1,7 +1,8 @@
 package com.lotfizad.stockassignment;
 
-import com.lotfizad.stockassignment.dto.CreateStockDto;
-import com.lotfizad.stockassignment.exceptions.StockAlreadyExistsException;
+import com.lotfizad.stockassignment.service.StockCrudService;
+import com.lotfizad.stockassignment.service.dto.CreateStockDto;
+import com.lotfizad.stockassignment.service.exceptions.StockAlreadyExistsException;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

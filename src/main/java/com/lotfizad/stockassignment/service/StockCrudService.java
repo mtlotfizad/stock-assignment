@@ -1,9 +1,9 @@
-package com.lotfizad.stockassignment;
+package com.lotfizad.stockassignment.service;
 
-import com.lotfizad.stockassignment.domain.StockEntity;
-import com.lotfizad.stockassignment.dto.CreateStockDto;
-import com.lotfizad.stockassignment.exceptions.StockAlreadyExistsException;
 import com.lotfizad.stockassignment.repository.StockRepository;
+import com.lotfizad.stockassignment.repository.domain.StockEntity;
+import com.lotfizad.stockassignment.service.dto.CreateStockDto;
+import com.lotfizad.stockassignment.service.exceptions.StockAlreadyExistsException;
 import org.springframework.stereotype.Service;
 
 @Service

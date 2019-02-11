@@ -1,4 +1,4 @@
-package com.lotfizad.stockassignment.exceptions;
+package com.lotfizad.stockassignment.service.exceptions;
 
 public class StockAlreadyExistsException extends RuntimeException {
 

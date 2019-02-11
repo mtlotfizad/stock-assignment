@@ -1,4 +1,4 @@
-package com.lotfizad.stockassignment.dto;
+package com.lotfizad.stockassignment.service.dto;
 
 public class CreateStockDto {
 
