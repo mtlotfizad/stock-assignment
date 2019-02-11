@@ -10,14 +10,14 @@
 	</parent>
 	<groupId>com.lotfizad</groupId>
 	<artifactId>stock-assignment</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<name>stock-assignment</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<docker-maven-plugin.version>1.4.0</docker-maven-plugin.version>
+		<docker-maven-plugin.version>1.4.1</docker-maven-plugin.version>
 		<fasterxml.version>2.9.8</fasterxml.version>
 	</properties>
 
@@ -56,6 +56,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>com.spotify</groupId>
+			<artifactId>dockerfile-maven-extension</artifactId>
+			<version>${docker-maven-plugin.version}</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -67,7 +73,6 @@
 			<plugin>
 				<groupId>com.spotify</groupId>
 				<artifactId>dockerfile-maven-extension</artifactId>
-				<version>${docker-maven-plugin.version}</version>
 			</plugin>
 		</plugins>
 	</build>
