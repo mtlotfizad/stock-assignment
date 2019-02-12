@@ -5,11 +5,10 @@ import com.lotfizad.stockassignment.api.mapper.CreateStockViewModelMapper;
 import com.lotfizad.stockassignment.api.viewModel.CreateStockViewModel;
 import com.lotfizad.stockassignment.service.StockCrudService;
 import com.lotfizad.stockassignment.service.dto.CreateStockDto;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
@@ -29,7 +28,14 @@ public class StockController {
 
     @PostMapping
     public ResponseEntity<Long> createNewStock(@Valid @RequestBody CreateStockViewModel createStock) {
-        CreateStockDto createStockDto =  createStockViewModelMapper.fromViewModelToDto(createStock);
+        CreateStockDto createStockDto = createStockViewModelMapper.fromViewModelToDto(createStock);
         return ok().body(stockCrudService.createStock(createStockDto));
     }
+
+    @GetMapping
+    public ResponseEntity<Page> listStocks(Pageable pageable) {
+        return ok().body(stockCrudService.listAll(pageable));
+    }
+
+
 }
