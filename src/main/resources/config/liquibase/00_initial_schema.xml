@@ -20,4 +20,9 @@
         <modifySql dbms="h2"/>
     </changeSet>
 
+    <changeSet id="add_dummy_data" author="mtlotfizad">
+        <loadData tableName="stock"
+                  file="config/liquibase/stock.csv"/>
+    </changeSet>
+
 </databaseChangeLog>
