@@ -7,3 +7,11 @@ There are 4 REST end points:
 3. PUT /api/stocks/1 update price of the referred stock.  Returns 404 if the stock can't be found.
 4. POST /api/stocks creates new stock. A json body should be provided tho this end point with form of '{name, price}'. Please find [the cUrl example](src/main/resources/cUrls/new-stock.sh) on project's repository.
 
+**MVP**
+
+This project can be built into a docker image. To achieve that simply run `mvn install docker:build`
+
+**Merge Requests**
+
+There are a couple of branches and merge requests which have been closed in this project. If you like to extend this project pleae feel free to fork it ;)
+
