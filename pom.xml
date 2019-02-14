@@ -22,7 +22,6 @@
 		<liquibase.version>3.5.5</liquibase.version>
 		<liquibase-hibernate5.version>3.6</liquibase-hibernate5.version>
 		<spring-boot.version>1.5.10.RELEASE</spring-boot.version>
-
 	</properties>
 
 	<dependencies>
@@ -64,6 +63,22 @@
 			<groupId>com.mattbertolini</groupId>
 			<artifactId>liquibase-slf4j</artifactId>
 			<version>2.0.0</version>
+		</dependency>
+
+		<!-- JSP-Servlet -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+			<scope>provided</scope>
 		</dependency>
 
 	</dependencies>
