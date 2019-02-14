@@ -47,4 +47,14 @@ public class StockDto {
         this.lastUpdate = lastUpdate;
         return this;
     }
+
+    @Override
+    public String toString() {
+        return "StockDto{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", currentPrice=" + currentPrice +
+                ", lastUpdate=" + lastUpdate +
+                '}';
+    }
 }

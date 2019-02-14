@@ -9,9 +9,12 @@ There are 4 REST end points:
 
 **MVP**
 
-This project can be built into a docker image. To achieve that simply run `mvn install docker:build`
+This project can be built into a docker image. So you can give it to some DevOps guy to bring it up on some docker service. To achieve that simply run `mvn install docker:build`
 
 **Merge Requests**
 
 There are a couple of branches and merge requests which have been closed in this project. If you like to extend this project pleae feel free to fork it ;)
 
+**Simple UI**
+
+A very simple UI showing list of stock is available at [home](http://localhost:8080).
