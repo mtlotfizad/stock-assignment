@@ -22,4 +22,12 @@ public class CreateStockDto {
         this.price = price;
         return this;
     }
+
+    @Override
+    public String toString() {
+        return "CreateStockDto{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }

@@ -1,4 +1,4 @@
-id,name,currentPrice,lastUpdate
+id,name,current_price,last_update
 1,stk1,10.15,2015-12-25T23:55:57
 2,stk2,21.10,2015-12-25T23:55:58
 3,stk3,14.15,2015-12-25T23:55:59

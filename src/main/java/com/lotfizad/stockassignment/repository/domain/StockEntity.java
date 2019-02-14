@@ -17,6 +17,14 @@ public class StockEntity {
     @UpdateTimestamp
     private Date lastUpdate;
 
+    public StockEntity() {
+    }
+
+    public StockEntity(String name, double currentPrice) {
+        this.name = name;
+        this.currentPrice = currentPrice;
+    }
+
     public long getId() {
         return id;
     }

@@ -12,10 +12,10 @@
             </column>
             <column name="name" type="VARCHAR(255)">
                 <constraints nullable="false"/>
-            </column><column name="currentPrice" type="FLOAT">
+            </column><column name="current_price" type="FLOAT">
                 <constraints nullable="false"/>
             </column>
-            <column name="lastUpdate" type="datetime"/>
+            <column name="last_update" type="datetime"/>
         </createTable>
         <modifySql dbms="h2"/>
     </changeSet>
