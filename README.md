@@ -13,8 +13,11 @@ This project can be built into a docker image. So you can give it to some DevOps
 
 **Merge Requests**
 
-There are a couple of branches and merge requests which have been closed in this project. If you like to extend this project pleae feel free to fork it ;)
+There are a couple of branches and [merge requests](https://github.com/mtlotfizad/stock-assignment/pulls?q=is%3Apr+is%3Aclosed) which have been closed in this project. 
 
 **Simple UI**
 
 A very simple UI showing list of stock is available at [home](http://localhost:8080).
+
+-----------
+If you like to extend this project please feel free to fork it ;)
