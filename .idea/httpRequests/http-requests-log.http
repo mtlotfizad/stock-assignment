@@ -1,0 +1,10 @@
+GET http://localhost:8080/list-stocks
+
+<> 2019-02-14T113200.404.json
+
+###
+
+GET http://localhost:8080/api/stocks
+
+###
+
