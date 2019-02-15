@@ -19,5 +19,11 @@ There are a couple of branches and [merge requests](https://github.com/mtlotfiza
 
 A very simple UI showing list of stock is available at [home](http://localhost:8080).
 
+**Database**
+
+This project uses h2 as an embedded db. The files of the database are storing in `target` directory. For the first run `liquibase` is responsible for creating `stock` table and filling it with sample data. The config of h2 can be altered to store data in memory, for achieving this please uncomment these 2 lines in `application.properties` and comment rival settings: 
+* liquibase.url
+* spring.datasource.url   
+
 -----------
 If you like to extend this project please feel free to fork it ;)

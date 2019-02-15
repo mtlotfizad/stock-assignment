@@ -23,7 +23,7 @@ public class IndexController {
 
     @RequestMapping("/")
     public String stockList(Model model,
-                            @PageableDefault(size = 2, direction = Sort.Direction.ASC) Pageable page) {
+                            @PageableDefault(size = 20, direction = Sort.Direction.ASC) Pageable page) {
         Page<StockDto> resultSet = stockCrudService.listAll(page);
         model.addAttribute("resultSet", resultSet);
         return "index";
